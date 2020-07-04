@@ -31,9 +31,7 @@ For each customer, we randomly assign them to a site version. By randomly assign
 <p align="center">
  
  
- 
-  Sometimes, you might not be able to run a true experiment to test your hypotheses due to not having multiple groups or not being able to control random assignment to groups.
-This will require  to consider alternative study designs. These methods can be put into three main bins, based on the amount of control that you hold over the variables in play:
+**Sometimes, you might not be able to run a true experiment to test your hypotheses due to not having multiple groups or not being able to control random assignment to groups.** This will require  to consider alternative study designs. These methods can be put into three main bins, based on the amount of control that you hold over the variables in play:
 
 
    1. If you have a lot of control over features, then you have an **experiment**. In the social and medical sciences, an experiment is defined by comparing outcomes between two or more groups, and ensuring equivalence between the compared groups except for the manipulation that we want to test.
