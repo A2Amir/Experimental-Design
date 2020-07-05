@@ -12,8 +12,7 @@ In this Repo you'll learn:
 
    #### 4. ways of measuring outcomes
 
-   #### 5. pitfalls to check for when designing an experiment.
-
+   #### 5. check for Controlling Variables, Validity and  Bias
 
  ## 1. Study Design
  
@@ -141,3 +140,8 @@ There are **two major categories that we can consider features: as evaluation me
 * On the flip side, **invariant metrics** are metrics that we hope will not be different between groups. Metrics in this category serve to check that the experiment is running as expected. For example, in an experiment with cookie-based diversion, the number of cookies generated for each condition would be a good invariant metric. Another metric could compare the distribution of times in which cookies were generated, to check the bias in the randomization procedure.
 
 **Notice:** We're not limited to tracking just one metric of each type but It's better to focus on a few key metrics, ignoring features that might be less reliable or highly correlated to other, more informative features.
+
+
+## 5. Check for Controlling Variables, Validity and  Bias
+
+In this section you'll learng about potential problems that can weaken a study's usefulness. racall that the goal of experiment is to show that **changes in one variable cause changes in a second, comes from controlling for the effects of our other variables**. Ideally, we would like the distribution of all of our variables to remain the same across our groups (experiment and control) except for the one that we manipulated to be different. Failure to pay attention to this means that we could fall into some analysis traps. 
