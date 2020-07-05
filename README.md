@@ -6,16 +6,16 @@ In this Repo you'll learn:
 
    #### 1. study design. 
 
-   #### 2. about the types of experiments,
+   #### 2. about the types of experiments
    
-   #### 3.types of Sampling
+   #### 3. types of Sampling
 
-   #### 4. ways of measuring outcomes,
+   #### 4. ways of measuring outcomes
 
    #### 5. pitfalls to check for when designing an experiment.
 
 
- ## 1. study design?
+ ## 1. Study Design
  
  Assume we want to add a new feature to our website to see if this new feature leads to more sales. 
  
@@ -93,7 +93,7 @@ Randomization still has a part in the within-subjects design in the order in whi
 <img src="imgs/6.PNG" height="300" weight="500"/>
 <p align="center">
  
- ## 4. ways of measuring outcomes 
+ ## 4. Ways of measuring Outcomes 
  
  The goals of your study may not be the same as the way you evaluate the study's success. Perhaps this is because the goal is something that can't be measured directly. Let's say that you have an idea of a website addition that improves user satisfaction. How should we measure this? In order to evaluate whether or not this improvement has happened, you need to have a way to objectively measure the effect of the addition. For example, you might include a survey to random users to have them rate their website experience on a 1-10 scale. If the addition is helpful, then we should expect the average rating to be higher for those users who are given the addition, versus those who are not. The rating scale acts as a concrete way of measuring user satisfaction. These objective features by which you evaluate performance are known as **evaluation metrics**.
  
@@ -116,9 +116,9 @@ For designing experiments, especially for web-based studies we will often think 
    
 **One property to note about user funnels is that typically there will be some dropoff in the users that move from step to step. This is much like how an actual funnel narrows from a large opening to a small exit.**
 
-Once you have a funnel, think about how you can implement your experimental manipulation in the funnel. We need to figure out a way to assign users to either a control group or experimental group. The place in which you make this assignment is known as the unit of diversion. 
+Once you have a funnel, think about how you can implement your experimental manipulation in the funnel. We need to figure out a way to assign users to either a control group or experimental group. The place in which you make this assignment is known as **the unit of diversion**. 
 
- <p align="center">
+<p align="center">
 <img src="imgs/7.PNG" height="300" weight="500"/>
 <p align="center">
 
@@ -132,4 +132,12 @@ Depending on the type of experiment you have, you might have different options f
 
 **Note:** When it comes to selecting a unit of diversion, **the consistency of the experience required can be a major factor to consider**. For the example provided, we need something more consistent than pageview events. So we then consider the cookie-based diversion. If the differences in interface between control and experiment are fairly minor, then we're probably okay with cookie-based diversion. But if we think that users will notice the change and we believe that it will have a major effect on experience, then we might be inclined to choose an account-based diversion.
 
+A funnel will also be of benefit when it comes to deciding on metrics to track and analyze as part of the experiment. The immediate features that come out of a funnel come in the form of counts and ratios. For example, we could count the number of times a search results in a product being selected (a count), or the ratio of selections to searches as adjacent slices in the funnel (a ratio).
 
+There are **two major categories that we can consider features: as evaluation metrics or as invariant metrics**. 
+
+* **Evaluation metrics** are the metrics by which we compare groups. Ideally, we hope to see a difference between groups that will tell us if our manipulation was a success. We might want to see an increased click-through-rate from search results to products, or an increase in overall revenue. 
+
+* On the flip side, **invariant metrics** are metrics that we hope will not be different between groups. Metrics in this category serve to check that the experiment is running as expected. For example, in an experiment with cookie-based diversion, the number of cookies generated for each condition would be a good invariant metric. Another metric could compare the distribution of times in which cookies were generated, to check the bias in the randomization procedure.
+
+**Notice:** We're not limited to tracking just one metric of each type but It's better to focus on a few key metrics, ignoring features that might be less reliable or highly correlated to other, more informative features.
