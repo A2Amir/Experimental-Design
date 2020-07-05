@@ -2,14 +2,17 @@
 IF you see that two variables are related to one another doesn't mean that when one changes the other also changes as well which gives meaning **Correlation does not imply causation**.  However, there will be cases where you do want to say that **one variable causes another to change**. You might want to say that changes to your website cause visitors to make more purchases or maybe you want to show that changes to your recommendation engine provide better search results to your users.  To test your hypotheses,
 you should run an experiment. This is why experiment design is so important for data scientists to know about the scope of conclusions that they can make from their data. 
 
-In this Repo you'll learn
+In this Repo you'll learn:
+
    #### 1. what it takes to build an experiment. 
 
    #### 2. about the types of experiments,
+   
+   #### 3.types of Sampling
 
-   #### 3. ways of measuring outcomes,
+   #### 4. ways of measuring outcomes,
 
-   #### 4. pitfalls to check for when designing an experiment.
+   #### 5. pitfalls to check for when designing an experiment.
 
 
  ## 1. What is an Experiment?
@@ -62,6 +65,31 @@ Most of the time, when you think of an experiment, you think of a **between-subj
 
 **Note:** We aren't limited to just two groups. We could have multiple experimental groups to compare, rather than just one control group and one experimental group. This could form an A/B/C test for a web-based experiment, with control group "A" and experimental groups "B" and "C".
 
+
+ <p align="center">
+<img src="imgs/5.PNG" height="300" weight="500"/>
+<p align="center">
+ 
+
 If an individual completes all conditions, rather than just one, this is known as **a within-subjects design**. Within-subjects designs are also known as **repeated measures designs**. By measuring an individual's output in all conditions, we know that the distribution of features in the groups will be equivalent. We can account for individuals' inclinations in our analysis. For example, if an individual rates three different color palettes for a product, we can know if a high rating for one palette is particularly good compared to the others (e.g. 10 vs. 5, 6) or if it's not a major distinction (e.g. 10 vs. 8, 9).
 
 Randomization still has a part in the within-subjects design in the order in which individuals complete conditions. This is important to reduce potential bias effect. One other downside of the within-subjects design is that it's not always possible to pull off a within-subjects design. For example, when a user visits a website and completes their session, we usually can't guarantee when they'll come back. The purpose of their following visit also might not be comparable to their first. It can take a lot more effort in control in order to set up an effective within-subjects design.
+
+
+**Note:** As noted at the start, the goal of sampling is to use a subset of the whole population to make inferences about the full population, so that we didn't need to record data from everyone. To that end, **probabilistic sampling techniques** were described above try to obtain a sample that was representative of the whole. However, it's useful to note that there also exist **non-probabilistic sampling techniques** that simplify the sampling process, at the risk of harming the validity of your results.
+
+
+
+## 3. Types of Sampling
+
+ If you need to perform a survey of a population, it could be unreasonable in both time and money costs to try and collect thoughts from every single person in the population. This is where sampling comes in. The goal of sampling is to only take a subset of the population, using the responses from that subset to make an inference about the whole population. Here, we'll cover two basic probabilistic techniques that are commonly used.
+ 
+ 
+
+* The simplest of these approaches is **simple random sampling**. In a simple random sample, each individual in the population has an equal chance of being selected. We just randomly make draws from the population until we have the sample size desired; your sample size depends on the level of uncertainty you are willing to have about the collected data. Since everyone has an equal chance of being drawn, we can expect the feature distribution of selected units to be similar to the distribution of the population as a whole. In addition, a simple random sample is easy to set up.
+
+* It is possible that certain groups are underrepresented in a simple random sample, especially those that make up a low proportion of the population. If there are certain rarer subgroups of interest, it can be worth adding one additional step and performing **stratified random sampling**. In a stratified random sample, we need to first divide the entire population into disjoint groups and each individual must be a part of one group. Then, from each group, you take a simple random sample. In a proportional sample, the sample size is proportional to how large the group is in the full population.
+ <p align="center">
+<img src="imgs/6.PNG" height="300" weight="500"/>
+<p align="center">
+ 
