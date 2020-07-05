@@ -53,3 +53,4 @@ a patch to modify character and item attributes.This may then have an effect on 
 <img src="imgs/4.PNG" height="300" weight="500"/>
 <p align="center">
  
+Another classic example of the quasi-experiment is if a researcher wants to test some new supplemental materials for a high school course. If they select two different schools, one with the new materials and one without, we have a quasi-experiment since the differing qualities of students or teachers at those schools might have an effect on the outcomes. Ideally, we'd like to match the two schools before the test as closely as possible, but we can't call it a true experiment since the assignment of student to school can't be considered random.
