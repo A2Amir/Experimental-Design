@@ -4,7 +4,7 @@ you should run an experiment. This is why experiment design is so important for 
 
 In this Repo you'll learn:
 
-   #### 1. what it takes to build an experiment. 
+   #### 1. study design. 
 
    #### 2. about the types of experiments,
    
@@ -15,7 +15,7 @@ In this Repo you'll learn:
    #### 5. pitfalls to check for when designing an experiment.
 
 
- ## 1. What is an Experiment?
+ ## 1. study design?
  
  Assume we want to add a new feature to our website to see if this new feature leads to more sales. 
  
@@ -93,3 +93,43 @@ Randomization still has a part in the within-subjects design in the order in whi
 <img src="imgs/6.PNG" height="300" weight="500"/>
 <p align="center">
  
+ ## 4. ways of measuring outcomes 
+ 
+ The goals of your study may not be the same as the way you evaluate the study's success. Perhaps this is because the goal is something that can't be measured directly. Let's say that you have an idea of a website addition that improves user satisfaction. How should we measure this? In order to evaluate whether or not this improvement has happened, you need to have a way to objectively measure the effect of the addition. For example, you might include a survey to random users to have them rate their website experience on a 1-10 scale. If the addition is helpful, then we should expect the average rating to be higher for those users who are given the addition, versus those who are not. The rating scale acts as a concrete way of measuring user satisfaction. These objective features by which you evaluate performance are known as **evaluation metrics**.
+ 
+ As a rule of thumb, it's a good idea to consider the goals of a study separate from the evaluation metrics. This provides a couple of useful benefits:
+
+* First, this makes it clear that the metric isn't the main point of a study: it's the implications of the metric relative to the goal that matters. This is especially important if a metric isn't directly attached to the goal. For example, measuring students' confidence going into a standardized test might be a proxy for the goal of test preparedness, in the absence of being able to get their test scores directly or in a timely fashion.
+
+* Secondly, having the metric separate from the goal can clarify the purpose of conducting the study or experiment. It makes sure we can answer the question of why we want to run a study or experiment. From the above example, we aren't measuring confidence just to make people feel good about themselves: we're doing it to try and improve their actual performances.
+
+**Note:** You might hear other terminology for goals and evaluation metrics than those used in this section. In the social sciences, it's common to hear a **"construct" as analogous to the goal or objective under investigation** and **the "operational definition" as the way outcomes are measured**.
+
+
+For designing experiments, especially for web-based studies we will often think of **the user funnel**. A funnel is **the flow of steps you expect a user of your product to take**. Typically, the funnel ends at the place where your main evaluation metric is recorded, and includes a step where your experimental manipulation can be performed. For example, we might think of the following steps for someone to purchase a product in an online store:
+
+   * Visit the site homepage
+   * Search for a desired product or click on a product category
+   * Click on a product image
+   * Add the product to the cart
+   * Check out and finalize purchase
+   
+**One property to note about user funnels is that typically there will be some dropoff in the users that move from step to step. This is much like how an actual funnel narrows from a large opening to a small exit.**
+
+Once you have a funnel, think about how you can implement your experimental manipulation in the funnel. We need to figure out a way to assign users to either a control group or experimental group. The place in which you make this assignment is known as the unit of diversion. 
+
+ <p align="center">
+<img src="imgs/7.PNG" height="300" weight="500"/>
+<p align="center">
+
+Depending on the type of experiment you have, you might have different options for diversion, each with its own pros and cons:
+
+* **Event-based diversion:** (e.g. pageview) Each time a user loads up the page of interest, **the experimental condition** is randomly rolled. Since this ignores previous visits, this can create an inconsistent experience, if the condition causes a user-visible change.
+
+* **Cookie-based diversion:** A cookie is stored on the user's device, which determines their experimental condition as long as the cookie remains on the device. Cookies don't require a user to have an account or be logged in, but can be subverted through anonymous browsing or a user just clearing out cookies.
+
+* **Account-based diversion:** (e.g. User ID) User IDs are randomly divided into conditions. Account-based diversions are reliable, but requires users to have accounts and be logged in. This means that our pool of data might be limited in scope, and you'll need to consider the risks of using personally-identifiable information.
+
+**Note:** When it comes to selecting a unit of diversion, **the consistency of the experience required can be a major factor to consider**. For the example provided, we need something more consistent than pageview events. So we then consider the cookie-based diversion. If the differences in interface between control and experiment are fairly minor, then we're probably okay with cookie-based diversion. But if we think that users will notice the change and we believe that it will have a major effect on experience, then we might be inclined to choose an account-based diversion.
+
+
