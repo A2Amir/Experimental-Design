@@ -214,12 +214,12 @@ One particular point worth further discussion is that of informed consent for we
 
 However, informed consent is still an important ethical principle, so there is continuing debate on how to best obtain consent for users of a website. One option could be to allow users to opt out of experiment participation, with the default user agreement implying consent to participation in unobtrusive experiments. An opposing option would only run experiments on users who opt-_in_ to participation, asking the user to set their preference on their initial visit or registration. The opt-in approach is more in line with the core idea of informed consent, but also risks fewer users available for testing changes.
 
-## 6. A SMART Mnemonic for Experiment Design
+## 7. A SMART Mnemonic for Experiment Design
 
 There's a mnemonic called **SMART** for teams to plan out projects that also happens to apply pretty well for creating experiments. The letters of **SMART** stand for:
 
    * **Specific:** Make sure the goals of your experiment are specific.
    * **Measurable:** Outcomes must be measurable using objective metrics
    * **Achievable:** The steps taken for the experiment and the goals must be realistic.
-   * Relevant:** The experiment needs to have purpose behind it.
+   * **Relevant:** The experiment needs to have purpose behind it.
    * **Timely:** Results must be obtainable in a reasonable time frame.
