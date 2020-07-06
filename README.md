@@ -144,4 +144,23 @@ There are **two major categories that we can consider features: as evaluation me
 
 ## 5. Check for Controlling Variables, Validity and  Bias
 
-In this section you'll learng about potential problems that can weaken a study's usefulness. racall that the goal of experiment is to show that **changes in one variable cause changes in a second, comes from controlling for the effects of our other variables**. Ideally, we would like the distribution of all of our variables to remain the same across our groups (experiment and control) except for the one that we manipulated to be different. Failure to pay attention to this means that we could fall into some analysis traps. 
+In this section you'll learn about potential problems that can weaken a study's usefulness. racall that the goal of experiment is to show that **changes in one variable cause changes in a second, comes from controlling for the effects of our other variables**. Ideally, we would like the distribution of all our variables to remain the same across our groups (experiment and control) except for the one that we manipulated to be different. 
+
+If we aren't able to control all features or there is a lack of equivalence between groups, then we may be susceptible to **confounding variables**. The correlation observed between two variables might be due to changes in a third variable, rather than one causing the other. Another possibility is that there is a causal relationship between the two features, but it is an indirect relationship mediated by a third, intermediate variable. 
+
+When designing an experiment, it's important to keep in mind **validity**, which concerns how well your experiment accomplishes what it sets out to perform. There are three major conceptual dimensions upon which validity can be assessed:
+
+   * Construct Validity
+   * Internal Validity
+   * External Validity
+
+#### Construct Validity
+You want to make sure thet your metrics are aligned with your study's goals, this is **Construct validity**. Poor construct validity can come about when an evaluation metric does not actually measure something related to the desired outcome concept. Alternatively, it might be that a metric is ill-constructed, such that it does not make clear distinctions on the outcome concept.
+
+#### Internal Validity
+
+Internal validity refers to the degree to which a causal relationship can be derived from an experiment's results. Controlling for and accounting for other variables is key to maintaining good internal validity. **Simply taking the correlation between the two as a causal relationship without accounting for other variables is a sign that internal validity has not be met.** (here should be checked the confunding variables)
+
+#### External Validity
+
+External validity is concerned with the ability of an experimental outcome to be generalized to a broader population. This is most relevant with experiments that involve sampling: how representative is the sample to the whole? For studies at academic institutions, a frequent question is if data collected using only college students can be generalized to other age or socioeconomic groups.
