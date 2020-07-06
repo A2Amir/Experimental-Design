@@ -148,26 +148,26 @@ In this section you'll learn about potential problems that can weaken a study's 
 
 If we aren't able to control all features or there is a lack of equivalence between groups, then we may be susceptible to **confounding variables**. The correlation observed between two variables might be due to changes in a third variable, rather than one causing the other. Another possibility is that there is a causal relationship between the two features, but it is an indirect relationship mediated by a third, intermediate variable. 
 
-When designing an experiment, it's important to keep in mind **validity**, which concerns how well your experiment accomplishes what it sets out to perform. There are three major conceptual dimensions upon which validity can be assessed:
+##### When designing an experiment, it's important to keep in mind **validity**, which concerns how well your experiment accomplishes what it sets out to perform. There are three major conceptual dimensions upon which validity can be assessed:
 
    * Construct Validity
    * Internal Validity
    * External Validity
 
-#### Construct Validity
+* #### Construct Validity
 You want to make sure thet your metrics are aligned with your study's goals, this is **Construct validity**. Poor construct validity can come about when an evaluation metric does not actually measure something related to the desired outcome concept. Alternatively, it might be that a metric is ill-constructed, such that it does not make clear distinctions on the outcome concept.
 
-#### Internal Validity
+* #### Internal Validity
 
 Internal validity refers to the degree to which a causal relationship can be derived from an experiment's results. Controlling for and accounting for other variables is key to maintaining good internal validity. **Simply taking the correlation between the two as a causal relationship without accounting for other variables is a sign that internal validity has not be met.** (here should be checked the confunding variables)
 
-#### External Validity
+* #### External Validity
 
 External validity is concerned with the ability of an experimental outcome to be generalized to a broader population. This is most relevant with experiments that involve sampling: how representative is the sample to the whole? For studies at academic institutions, a frequent question is if data collected using only college students can be generalized to other age or socioeconomic groups.
 
-In addition to check validity, you should check for sources of biases in your experimental designs. **Biases in experiments are systematic effects that affect the interpretation of experimental results**, mostly in terms of internal validity. Just as humans can have a lot of different biases, there are numerous ways in which an experiment can become unbalanced.
+##### In addition to check validity, you should check for sources of biases in your experimental designs. **Biases in experiments are systematic effects that affect the interpretation of experimental results**, mostly in terms of internal validity. Just as humans can have a lot of different biases, there are numerous ways in which an experiment can become unbalanced.
 
-#### Sampling Bias
+* #### Sampling Bias
 
 Many experimental biases fall under the **sampling bias** umbrella. **Sampling biases are those that cause our observations to not be representative of the population**. For example, if assignment to experimental groups is done in an arbitrary fashion (as opposed to random assignment or matched groups), we risk our outcomes being based less on the experimental manipulation and more on the composition of the underlying groups.
 
@@ -176,17 +176,17 @@ Studies that use surveys to collect data often have to deal with the **self-sele
 One type of sampling bias related to **missing data** is the **survivor bias**. **Survivor bias is one where losses or dropout of observed units is not accounted for in an analysis**. A key example of this was in British World War II operations research, where engineers avoided using survivor bias when they considered where to add armor to their planes. Rather than add armor to the spots where returning planes had bullet holes, armor was added to the spots where the planes didn't have bullet holes. That's because the planes that took shots to those places probably crashed, due to those locations being more vital for maintaining flight, so they didn't "survive" and weren't available for observation.
 
 
-### Novelty Bias
+* ### Novelty Bias
 
 **A novelty effect is one that causes observers to change their behavior simply because they're seeing something new**. We might not be able to gauge the true effect of a manipulation until after the novelty wears off and population metrics return to a level that actually reflects the changes made. This will be important for cases where we want to track changes over time, such as trying to get users to re-visit a webpage or use an app more frequently. Novelty is probably not a concern (or perhaps what we hope for) when it comes to manipulations that are expected to only have a one-shot effect.
 
 
-#### Order Biases
+* #### Order Biases
 
 There are a couple of biases to be aware of when running a **within-subjects experiment**. Recall that in a within-subjects design, each participant performs a task or makes a rating in multiple experimental conditions, rather than just one. **The order in which conditions are completed could have an effect on participant responses**. A **primacy effect is one that affects early conditions, perhaps biasing them to be recalled better or to serve as anchor values for later conditions**. A **recency effect is one that affects later conditions, perhaps causing bias due to being fresher in memory or task fatigue**.
 
 An easy way of getting around order biases is to simply randomize the order of conditions. If we have three conditions, then each of the six ways of completing the task (ABC, ACB, BAC, BCA, CAB, CBA) should be equally likely. While there still might end up being order effects like **carry-over effects**, where a particular condition continues to have an effect on future conditions, this will be much easier to detect than if every participant completed the task in the exact same order of conditions.
 
-#### Experimenter Bias
+* #### Experimenter Bias
 
 One bias to watch out for, especially in face-to-face experiments, is **the experimenter bias**. This is where the presence or knowledge of the experimenter can affect participants' behaviors or performance. If an experimenter knows what condition a participant is in, they might subtly nudge the participant towards their expected result with their interactions with the participant. In addition, participants may act differently in the presence of an experimenter, to try and act in the 'right' way – regardless of if a subject actually knows what the experimenter is looking for or not.
