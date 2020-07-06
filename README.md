@@ -13,6 +13,10 @@ In this Repo you'll learn:
    #### 4. ways of measuring outcomes
 
    #### 5. check for Controlling Variables, Validity and  Bias
+   
+   #### 6.  Ethics in Experimentation
+   
+   #### 7.  A SMART Mnemonic for Experiment Design
 
  ## 1.  Experiment Design
  
@@ -148,7 +152,7 @@ In this section you'll learn about potential problems that can weaken a study's 
 
 If we aren't able to control all features or there is a lack of equivalence between groups, then we may be susceptible to **confounding variables**. The correlation observed between two variables might be due to changes in a third variable, rather than one causing the other. Another possibility is that there is a causal relationship between the two features, but it is an indirect relationship mediated by a third, intermediate variable. 
 
-##### When designing an experiment, it's important to keep in mind **validity**, which concerns how well your experiment accomplishes what it sets out to perform. There are three major conceptual dimensions upon which validity can be assessed:
+#### When designing an experiment, it's important to keep in mind **validity**, which concerns how well your experiment accomplishes what it sets out to perform. There are three major conceptual dimensions upon which validity can be assessed:
 
    * Construct Validity
    * Internal Validity
@@ -165,7 +169,7 @@ Internal validity refers to the degree to which a causal relationship can be der
 
 External validity is concerned with the ability of an experimental outcome to be generalized to a broader population. This is most relevant with experiments that involve sampling: how representative is the sample to the whole? For studies at academic institutions, a frequent question is if data collected using only college students can be generalized to other age or socioeconomic groups.
 
-##### In addition to check validity, you should check for sources of biases in your experimental designs. **Biases in experiments are systematic effects that affect the interpretation of experimental results**, mostly in terms of internal validity. Just as humans can have a lot of different biases, there are numerous ways in which an experiment can become unbalanced.
+#### In addition to check validity, you should check for sources of biases in your experimental designs. **Biases in experiments are systematic effects that affect the interpretation of experimental results**, mostly in terms of internal validity. Just as humans can have a lot of different biases, there are numerous ways in which an experiment can become unbalanced.
 
 * #### Sampling Bias
 
@@ -190,3 +194,32 @@ An easy way of getting around order biases is to simply randomize the order of c
 * #### Experimenter Bias
 
 One bias to watch out for, especially in face-to-face experiments, is **the experimenter bias**. This is where the presence or knowledge of the experimenter can affect participants' behaviors or performance. If an experimenter knows what condition a participant is in, they might subtly nudge the participant towards their expected result with their interactions with the participant. In addition, participants may act differently in the presence of an experimenter, to try and act in the 'right' way – regardless of if a subject actually knows what the experimenter is looking for or not.
+
+
+## 6. Ethics in Experimentation
+
+Before you run an experiment, it's important to consider the ethical treatments to which you subject your participants. Through the mid-20th century, exposure of questionable and clearly unethical research in the social and medical sciences spurred the creation of guidelines for ethical treatment of human subjects in studies and experiments. While different fields have developed different standards, they still have a number of major points in common:
+
+   * **Minimize participant risk:** Experimenters are obligated to construct experiments that minimize the risks to participants in the study. Risk of harm isn't just in the physical sense, but also the mental sense. If an experimental condition has potential to negatively affect a participant's emotions or mentality, then it's worth thinking about if the risks are really necessary to perform the desired investigation.
+
+   * **Have clear benefits for risks taken:** In some cases, risks may be unavoidable, and so they must be weighed against the benefits that may come from performing the study. When expectations for the study are not clearly defined, this throws into question the purpose of exposing subjects to risk. However, if the benefits are shown to be worth the risks, then it is still possible for the study to be run. This often comes up in medicine, where test treatments should show worthy potential against alternative approaches.
+
+   * **Provide informed consent:** Building up somewhat from the previous two points, subjects should be informed of and agree to the risks and benefits of participation before they join the study or experiment. This is also an opportunity for a participant to opt out of participation. However, there are some cases where deception is necessary. This might be to avoid biasing the participant's behavior by seeding their expectations, or if there is a dummy task surrounding the actual test to be performed. In cases like this, it's important to include a debriefing after the subject's participation so that they don't come away from the task feeling mislead.
+
+   * **Handle sensitive data appropriately:** If you're dealing with identifiable information in your study, make sure that you take appropriate steps to protect their anonymity from others. Sensitive information includes things like names, addresses, pictures, timestamps, and other links from personal identifiers to account information and history. Collected data should be anonymized as much as possible; surveys and census results are often also aggregated to avoid tracing outcomes back to any one person.
+
+In the formal sciences, an experiment proposal must go through a review board before it can be run, to ensure that ethical principles have been followed. It's likely that you won't have a review board to submit your designs to prior to running an experiment. You'll need to evaluate these principles for yourself or with your colleagues to check for potential ethical issues before going forward with a study design.
+
+One particular point worth further discussion is that of informed consent for web-based experiments. It's often the case that when an experiment is run, users who are included in an experiment often don't know that they're participating in an experiment. If a manipulation carries no risk and is so minor as to be hidden away from the user (e.g. a change in recommendation engine), perhaps there is no need for informed consent. And when it comes to bias, it's known that peoples' behaviors can change when they know they are under observation. In practice, informed consent is often not considered when performing a web experiment.
+
+However, informed consent is still an important ethical principle, so there is continuing debate on how to best obtain consent for users of a website. One option could be to allow users to opt out of experiment participation, with the default user agreement implying consent to participation in unobtrusive experiments. An opposing option would only run experiments on users who opt-_in_ to participation, asking the user to set their preference on their initial visit or registration. The opt-in approach is more in line with the core idea of informed consent, but also risks fewer users available for testing changes.
+
+## 6. A SMART Mnemonic for Experiment Design
+
+There's a mnemonic called **SMART** for teams to plan out projects that also happens to apply pretty well for creating experiments. The letters of **SMART** stand for:
+
+   * **Specific:** Make sure the goals of your experiment are specific.
+   * **Measurable:** Outcomes must be measurable using objective metrics
+   * **Achievable:** The steps taken for the experiment and the goals must be realistic.
+   * Relevant:** The experiment needs to have purpose behind it.
+   * **Timely:** Results must be obtainable in a reasonable time frame.
