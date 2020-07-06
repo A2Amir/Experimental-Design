@@ -180,7 +180,7 @@ Studies that use surveys to collect data often have to deal with the **self-sele
 One type of sampling bias related to **missing data** is the **survivor bias**. **Survivor bias is one where losses or dropout of observed units is not accounted for in an analysis**. A key example of this was in British World War II operations research, where engineers avoided using survivor bias when they considered where to add armor to their planes. Rather than add armor to the spots where returning planes had bullet holes, armor was added to the spots where the planes didn't have bullet holes. That's because the planes that took shots to those places probably crashed, due to those locations being more vital for maintaining flight, so they didn't "survive" and weren't available for observation.
 
 
-* ### Novelty Bias
+* #### Novelty Bias
 
 **A novelty effect is one that causes observers to change their behavior simply because they're seeing something new**. We might not be able to gauge the true effect of a manipulation until after the novelty wears off and population metrics return to a level that actually reflects the changes made. This will be important for cases where we want to track changes over time, such as trying to get users to re-visit a webpage or use an app more frequently. Novelty is probably not a concern (or perhaps what we hope for) when it comes to manipulations that are expected to only have a one-shot effect.
 
