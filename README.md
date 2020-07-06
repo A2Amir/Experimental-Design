@@ -1,4 +1,4 @@
-# Experimental Design
+# Introduction
 IF you see that two variables are related to one another doesn't mean that when one changes the other also changes as well which gives meaning **Correlation does not imply causation**.  However, there will be cases where you do want to say that **one variable causes another to change**. You might want to say that changes to your website cause visitors to make more purchases or maybe you want to show that changes to your recommendation engine provide better search results to your users.  To test your hypotheses,
 you should run an experiment. This is why experiment design is so important for data scientists to know about the scope of conclusions that they can make from their data. 
 
