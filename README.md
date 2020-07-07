@@ -152,7 +152,7 @@ There are **two major categories that we can consider features: as evaluation me
 
 In this section you'll learn about potential problems that can weaken a study's usefulness. racall that the goal of experiment is to show that **changes in one variable cause changes in a second, comes from controlling for the effects of our other variables**. Ideally, we would like the distribution of all our variables to remain the same across our groups (experiment and control) except for the one that we manipulated to be different. 
 
-If we aren't able to control all features or there is a lack of equivalence between groups, then we may be susceptible to **confounding variables**. The correlation observed between two variables might be due to changes in a third variable, rather than one causing the other. Another possibility is that there is a causal relationship between the two features, but it is an indirect relationship mediated by a third, intermediate variable. 
+If we aren't able to control all features or there is a lack of equivalence between groups, then we may be susceptible to **confounding variables meaning the correlation observed between two variables might be due to changes in a third variable, rather than one causing the other**. Another possibility is that there is a causal relationship between the two features, but it is an indirect relationship mediated by a third, intermediate variable. 
 
 #### When designing an experiment, it's important to keep in mind **validity**, which concerns how well your experiment accomplishes what it sets out to perform. There are three major conceptual dimensions upon which validity can be assessed:
 
@@ -161,7 +161,7 @@ If we aren't able to control all features or there is a lack of equivalence betw
    * External Validity
 
 * #### Construct Validity
-You want to make sure thet your metrics are aligned with your study's goals, this is **Construct validity**. Poor construct validity can come about when an evaluation metric does not actually measure something related to the desired outcome concept. Alternatively, it might be that a metric is ill-constructed, such that it does not make clear distinctions on the outcome concept.
+You want to make sure thet your metrics are aligned with your study's goals, this is **Construct validity**. Poor construct validity can come about when an evaluation metric does not actually measure something related to the desired outcome. Alternatively, it might be that a metric is ill-constructed, such that it does not make clear distinctions on the outcome concept.
 
 * #### Internal Validity
 
