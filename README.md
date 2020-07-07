@@ -1,18 +1,18 @@
 # Introduction
 IF you see that two variables are related to one another doesn't mean that when one changes the other also changes as well which gives meaning **Correlation does not imply causation**.  However, there will be cases where you do want to say that **one variable causes another to change**. You might want to say that changes to your website cause visitors to make more purchases or maybe you want to show that changes to your recommendation engine provide better search results to your users.  To test your hypotheses,
-you should run an experiment. This is why experiment design is so important for data scientists to know about the scope of conclusions that they can make from their data. 
+you should run an **experiment**. This is why experiment design is so important for data scientists to know about the scope of conclusions that they can make from their data. 
 
 In this Repo you'll learn:
 
-   #### 1. experiment design. 
+   #### 1. Experiment design
 
-   #### 2. about the types of experiments
+   #### 2. About the types of experiments
    
-   #### 3. types of Sampling
+   #### 3. Types of Sampling
 
-   #### 4. ways of measuring outcomes
+   #### 4. Ways of measuring outcomes
 
-   #### 5. check for Controlling Variables, Validity and  Bias
+   #### 5. Check for Controlling Variables, Validity and  Bias
    
    #### 6.  Ethics in Experimentation
    
@@ -52,8 +52,7 @@ For each customer, we randomly assign them to a site version. By randomly assign
  
 
    
-   3. If you have some control, then you have a **quasi-experiment**. One example of this is when a video game company rolls out
-a patch to modify character and item attributes.This may then have an effect on character and item popularity, since everyone is affected in the same way and We only have one group to track and there's no control group and in our analysis, we can only compare the games ecosystem from before the patch and from after the patch.  If we do see changes then there is the possibility for other factors to have caused these changes not just the patch itself. 
+   3. If you have some control, then you have a **quasi-experiment**. One example of this is when a video game company rolls out a patch to modify character and item attributes.This may then have an effect on character and item popularity, since everyone is affected in the same way and We have only one group to track and there's no control group in our analysis, we can only compare the games ecosystem from before the patch and from after the patch.  If we see changes then there is the possibility for other factors to have caused these changes not just the patch itself. 
 
  <p align="center">
 <img src="imgs/4.PNG" height="300" weight="500"/>
@@ -79,8 +78,6 @@ If an individual completes all conditions, rather than just one, this is known a
 Randomization still has a part in the within-subjects design in the order in which individuals complete conditions. This is important to reduce potential bias effect. One other downside of the within-subjects design is that it's not always possible to pull off a within-subjects design. For example, when a user visits a website and completes their session, we usually can't guarantee when they'll come back. The purpose of their following visit also might not be comparable to their first. It can take a lot more effort in control in order to set up an effective within-subjects design.
 
 
-**Note:** As noted at the start, the goal of sampling is to use a subset of the whole population to make inferences about the full population, so that we didn't need to record data from everyone. To that end, **probabilistic sampling techniques** were described above try to obtain a sample that was representative of the whole. However, it's useful to note that there also exist **non-probabilistic sampling techniques** that simplify the sampling process, at the risk of harming the validity of your results.
-
 
 
 ## 3. Types of Sampling
@@ -95,6 +92,11 @@ Randomization still has a part in the within-subjects design in the order in whi
  <p align="center">
 <img src="imgs/6.PNG" height="300" weight="500"/>
 <p align="center">
+   
+   
+   **Note:** As noted at the start, the goal of sampling is to use a subset of the whole population to make inferences about the full population, so that we didn't need to record data from everyone. To that end, **probabilistic sampling techniques** were described above try to obtain a sample that was representative of the whole. However, it's useful to note that there also exist **non-probabilistic sampling techniques** that simplify the sampling process, at the risk of harming the validity of your results.
+
+
  
  ## 4. Ways of measuring Outcomes 
  
