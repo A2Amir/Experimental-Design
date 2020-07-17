@@ -225,3 +225,5 @@ There's a mnemonic called **SMART** for teams to plan out projects that also hap
    * **Achievable:** The steps taken for the experiment and the goals must be realistic.
    * **Relevant:** The experiment needs to have purpose behind it.
    * **Timely:** Results must be obtainable in a reasonable time frame.
+
+In [the next repository](https://github.com/A2Amir/Statistical-Considerations-in-Testing) I am going throgh how statistical techniques can help us answer questions related to setting up an experiment and some tricky pitfalls that can come as a part of enlightened outcomes of an experiment.
