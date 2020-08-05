@@ -4,19 +4,19 @@ you should run an **experiment**. This is why experiment design is so important 
 
 In this Repo you'll learn:
 
-   #### 1. Experiment design
+   ### 1. Experiment design
 
-   #### 2. About the types of experiments
+   ### 2. About the types of experiments
    
-   #### 3. Types of Sampling
+   ### 3. Types of Sampling
 
-   #### 4. Ways of measuring outcomes
+   ### 4. Ways of measuring outcomes
 
-   #### 5. Check for Controlling Variables, Validity and  Bias
+   ### 5. Check for Controlling Variables, Validity and  Bias
    
-   #### 6.  Ethics in Experimentation
+   ### 6.  Ethics in Experimentation
    
-   #### 7.  A SMART Mnemonic for Experiment Design
+   ### 7.  A SMART Mnemonic for Experiment Design
 
  ## 1.  Experiment Design
  
